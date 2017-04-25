@@ -1,0 +1,12 @@
+     <div class="panel panel-default">
+             <div class="panel-heading">
+               <h3 class="panel-title"> {{convertDate({dt:weatherDay.dt}) | date:dateFormat}}</h3>
+
+             </div>
+             <div class="panel-body">
+               Day Time Temparature in F or C :
+               {{convertFahrenheit({degk1:weatherDay.main.temp})}}  |
+
+               {{convertCelcius({degk2:weatherDay.main.temp})}}
+             </div>
+           </div>

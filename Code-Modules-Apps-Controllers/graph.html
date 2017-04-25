@@ -1,0 +1,44 @@
+<html lang="en-us" ng-app ="myapp">
+    <head>
+        <title>Introduction to AngularJS</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    </head>
+    <body>
+
+      <canvas id="myChart">
+        <div class="container">
+  <h2>Chart.js — Line Chart Demo</h2>
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+</div>
+
+      </canvas>
+
+      <script>
+      var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["M", "T", "W", "T", "F", "S", "S"],
+    datasets: [{
+      backgroundColor: [
+        "#2ecc71",
+        "#3498db",
+        "#95a5a6",
+        "#9b59b6",
+        "#f1c40f",
+        "#e74c3c",
+        "#34495e"
+      ],
+      data: [12, 19, 3, 17, 28, 24, 7]
+    }]
+  }
+});
+      </script>
+
+    </body>
+    </html>
